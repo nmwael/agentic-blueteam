@@ -26,6 +26,12 @@ for f in "$TEAM_DIR/.opencode/agent"/*.md; do
 done
 echo "OK copied $count blue-team agent role file(s) to $WORKSPACE/.opencode/agent"
 
+if [ -d "$TEAM_DIR/library" ]; then
+    mkdir -p "$WORKSPACE/library"
+    cp -rf "$TEAM_DIR/library/"* "$WORKSPACE/library/"
+    echo "OK blue-team library books installed to $WORKSPACE/library"
+fi
+
 mkdir -p "$FINDINGS_DIR"
 echo "OK findings dir ready at $FINDINGS_DIR"
 
