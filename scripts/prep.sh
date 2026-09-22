@@ -28,7 +28,8 @@ echo "OK copied $count blue-team agent role file(s) to $WORKSPACE/.opencode/agen
 
 if [ -d "$TEAM_DIR/library" ]; then
     mkdir -p "$WORKSPACE/library"
-    cp -rf "$TEAM_DIR/library/"* "$WORKSPACE/library/"
+    rm -rf "$WORKSPACE/library/library"
+    cp -rf "$TEAM_DIR/library/." "$WORKSPACE/library/"
     echo "OK blue-team library books installed to $WORKSPACE/library"
 fi
 
