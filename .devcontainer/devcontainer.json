@@ -1,6 +1,6 @@
 {
   "name": "agentic-blueteam",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "features": {
     "ghcr.io/nmwael/agentic-devcontainer-feature/llama-server": "1",
     "ghcr.io/nmwael/agentic-devcontainer-feature/gpu-bridge": "1",
