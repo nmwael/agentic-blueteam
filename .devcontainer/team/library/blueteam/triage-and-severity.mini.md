@@ -166,5 +166,4 @@ Handoff rules:
 4. EPSS and KEV enrichment in scanners -- https://lucaberton.com/blog/trivy-vs-grype-2026/
 5. Scanner EPSS/KEV/VEX metadata -- https://www.scaler.com/blog/what-is-container-security-scanning-trivy-grype-best-practices/
 6. CIS Docker Benchmark v1.7 (asserts A02-class controls) -- https://rayasec.com/wp-content/uploads/CIS-Benchmark/Docker/CIS_Docker_Benchmark_v1.7_PDF.pdf
-7. OWASP Docker Security Cheat Sheet -- https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
-8. Reddit triage themes (reproduce first; AI-slop automation) -- (via Reddit search excerpt), no thread URL in research brief pool
+7. Reddit triage themes (reproduce first; AI-slop automation) -- (via Reddit search excerpt), no thread URL in research brief pool

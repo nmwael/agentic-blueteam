@@ -61,7 +61,7 @@ Write an evidence record for every guardrail decision: policy version, user iden
 | Risk | 2025 class | Blue-team posture |
 |------|-----------|-------------------|
 | LLM01 | Prompt injection (#1, two editions running) | Constrain via system prompt, validate outputs, segregate external content, enforce privileges ([OWASP LLM01:2025](https://genai.owasp.org/download/43299/), [Invicti analysis](https://www.invicti.com/blog/web-security/owasp-top-10-risks-llm-security-2025)) |
-| LLM02 | Sensitive information disclosure (up to #2) | Do not place secrets/roles in system prompts; leak-test outputs |
+| LLM02 | Sensitive information disclosure (up to #2) | Do not place secrets/roles in system prompts; leak-test outputs ([OWASP Top 10 for LLM Applications 2025](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf)) |
 | LLM05 | Improper output handling (down to #5) | Treat model as an untrusted user; context-aware encoding; parameterized queries for model-driven DB writes ([OWASP LLM05:2025](https://owasp.org/www-project-top-10-for-large-language-model-applications/2_0_vulns/LLM05_ImproperOutputHandling)) |
 | LLM06 | Excessive agency (new) | Least-privilege tools, monotonic policy, HITL gate ([OWASP LLM06:2025](https://owasp.org/www-project-top-10-for-large-language-model-applications/2_0_vulns/LLM06_ExcessiveAgency)) |
 | LLM07 | System prompt leakage (new) | Never embed API keys, tokens, or roles in system prompts; never treat the system prompt as a security boundary; external guardrails enforce critical controls ([Agen.co](https://agen.co/learning-center/owasp-top-10-for-llm)) |
@@ -158,3 +158,4 @@ Each row is checked monotonically: any change that broadens a row requires expli
 17. nicomarr/safer-codespace -- https://github.com/nicomarr/safer-codespace/
 18. Dan Demmel -- coding agents in secured dev containers -- https://www.danieldemmel.me/blog/coding-agents-in-secured-vscode-dev-containers
 19. vscode-remote-release issues #10976 (token leak to remote pod) -- https://github.com/microsoft/vscode-remote-release/issues/10976
+20. OWASP Docker Security Cheat Sheet -- https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
