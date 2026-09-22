@@ -39,6 +39,14 @@ Workflow: close with `--reason "not planned"` and a clear rationale. Must not re
 - Read `app/vulns/INTENT.md` before triaging any issue.
 - If a fix changes an INTENT contract (endpoint, flag, behavior), update `app/vulns/INTENT.md` in the same PR.
 
+## Tooling requests
+
+The box's tooling is fixed by the devcontainer. Agents must NEVER install a
+missing command on their own (apt/pip/npm/go install, downloading binaries) —
+such installs usually fail or vanish on rebuild. Report needed tooling (what +
+why) to the human for an HITL-gated devcontainer change; do not improvise this
+round.
+
 ## Verification Protocol
 
 1. Run `scripts/verify.sh` in the asset clone before pushing.
