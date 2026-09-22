@@ -14,6 +14,9 @@
     "ghcr.io/devcontainers-extra/features/opencode": {
       "version": "latest"
     },
+    "ghcr.io/devcontainers-extra/features/apt-get-packages": {
+      "packages": "gh"
+    },
     "ghcr.io/devcontainers/features/docker-in-docker:4": {
       "moby": false
     }
